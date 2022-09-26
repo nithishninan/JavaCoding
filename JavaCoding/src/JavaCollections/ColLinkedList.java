@@ -33,6 +33,7 @@ public class ColLinkedList {
 		/*for(int i=0; i<1E5; i++) {
 			list.add(0,i);
 		}*/
+		//To show the difference in timelines
 		for(int i=0; i<1E5; i++) {
 			list.add(list.size()-100,i);
 		}
