@@ -12,6 +12,7 @@ public class ColSortedMap {
 		Map<Integer, String> linkedHashMap = new LinkedHashMap<Integer, String>();
 		Map<Integer, String> treeMap = new TreeMap<Integer, String>();
 		
+		//Different types of Map for key value pair
 		System.out.println("The list for HashMap(Unsorted/Random Map) as follows:");
 		testMap(hashMap);
 		System.out.println("\nThe list for LinkedHashMap(Map that follows the same order as mentioned) as follows: ");
