@@ -1,5 +1,5 @@
 package JavaCollections;
-
+//Sample code for HashMap
 import java.util.HashMap;
 import java.util.Map;
 

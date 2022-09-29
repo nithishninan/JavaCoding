@@ -1,5 +1,5 @@
 package JavaCollections;
-
+//Sample Code for Linked Lists
 import java.util.List;
 import java.util.ArrayList;
 import java.util.LinkedList;

@@ -1,5 +1,5 @@
 package JavaCollections;
-
+//Sample Code for ArrayList
 import java.util.ArrayList;
 
 public class CollArrayList {

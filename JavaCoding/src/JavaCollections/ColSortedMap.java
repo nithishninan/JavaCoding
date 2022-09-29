@@ -1,5 +1,5 @@
 package JavaCollections;
-
+//Sample Code for Sorted Map
 import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.Map;
