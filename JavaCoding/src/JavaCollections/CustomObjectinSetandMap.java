@@ -11,6 +11,7 @@ class  Person{
 	private int id;
 	private String name;
 	
+ //	Adding constructors, toString and hashCode can be done by this shortcut:- right click->Source->Select specific method/requirement
 	public Person(int id, String name) {
 		this.id = id;
 		this.name = name;
@@ -20,7 +21,12 @@ class  Person{
 		return "Person [id=" + id + ", name=" + name + "]";
 	}
 
-	@Override
+	/*Adding hashCode method to get unique value in results by selecting different conditions:-
+		1. Unique id
+		2. Unique name
+		3. Unique name and id
+		For this program, we have selected third condition
+	 */
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
@@ -29,7 +35,6 @@ class  Person{
 		return result;
 	}
 
-	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
 			return true;
@@ -71,20 +76,24 @@ public class CustomObjectinSetandMap {
 		map.put("Carmella", 1);
 		map.put("Shyla", 2);
 		map.put("Carmella", 1);
-		
-		for(String key: map.keySet()) {
-			System.out.println(key+ ":" +map.get(key));
-		}*/
-		
+		*/
+
 		for (Person key: map.keySet()) {
 			System.out.println(key+ ":" +map.get(key));
 		}
 		
+		//Replacing String with object created using class Person  for adding custom objects in Sets	
 		Set<Person> set  = new LinkedHashSet<Person>();
 		set.add(p1);
 		set.add(p2);
 		set.add(p3);
 		set.add(p4);
+	/*	Set<String> set = new LinkedHashSet<String>();
+		set.add("Lisa");
+		set.add("Carmella");
+		set.add("Shyla");
+		set.add("Carmella");
+		*/
 		
 		System.out.println(set);
 	}
